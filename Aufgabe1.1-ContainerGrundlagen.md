@@ -37,7 +37,7 @@ Die praktische Umsetzung der Containerisierung mit Docker basiert auf vier zentr
 | **Dockerfile** | Textdatei mit der Bauanleitung und allen Installationsschritten. | Das Rezept |
 | **Docker Image** | Die fertige, unveränderliche Vorlage (Snapshot), die aus dem Dockerfile gebaut wurde. | Die Backmischung |
 | **Docker Container** | Die aktive, isolierte Laufzeitinstanz, die aus einem Image gestartet wird. | Der fertige Kuchen |
-| **Docker Registry** | Das digitale Lagerhaus (z. B. Docker Hub) zum Speichern und Teilen von Images. | Die Bibliothek |
+| **Docker Registry** | Das digitale Lagerhaus (z. B. Docker Hub) zum Speichern und Teilen von Images. | Der Supermarkt |
 
 ---
 *Dokumentationsstand: März 2026 | Bearbeitungszeit: 25 Minuten*
