@@ -64,6 +64,8 @@ In der installierten **Docker Extension** findet man die Informationen grafisch 
 * Unter dem Reiter **Containers** werden alle aktiven Instanzen (z. B. Portainer) gelistet.
 * Unter dem Reiter **Images** sieht man die lokal gespeicherten Abbilder (z. B. `portainer/portainer-ce`).
 
+![Docker Extension Übersicht](img/Bild%20(5).png)
+
 ### C. Über Portainer (Web-Interface)
 
 Portainer bietet ein Dashboard unter `https://localhost:9443`:
@@ -72,4 +74,5 @@ Portainer bietet ein Dashboard unter `https://localhost:9443`:
 * **Containers Menü:** Listet Details zu Status und Ressourcenverbrauch der Container.
 * **Images Menü:** Ermöglicht das Verwalten und Durchsuchen der lokalen Image-Datenbank.
 
----
+![Portainer Dashboard](img/Bild%20(6).png)
+
