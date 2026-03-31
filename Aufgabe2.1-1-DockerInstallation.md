@@ -1,36 +1,4 @@
-# Docker Grundlagen & Praxis-Guide
-
-## 1. Was ist Containerisierung?
-
-Containerisierung ist eine Technologie, um Anwendungen inklusive ihrer Abhängigkeiten isoliert zu verpacken. Ein Container ist eine leichtgewichtige, portierbare und unabhängige Umgebung. Im Gegensatz zu virtuellen Maschinen (VMs) teilt ein Container denselben Kernel mit dem Host-Betriebssystem.
-
-### Eigenschaften von Containern
-
-* **Leichtgewichtig:** Da kein eigenes Betriebssystem gestartet werden muss, werden minimale Systemressourcen benötigt.
-* **Portabel:** Ein Container läuft auf jedem System, das die entsprechende Container-Engine unterstützt.
-* **Isoliert:** Jeder Container läuft getrennt von anderen, was die Sicherheit erhöht.
-
----
-
-## 2. Container vs. Virtualisierung (VMs)
-
-* **VMs:** Nutzen eine **Hypervisor-Schicht**, um Hardware zu verteilen. Jede VM benötigt ein eigenes, vollständiges **Gast-Betriebssystem**.
-* **Container:** Nutzen direkt den **Kernel des Host-Betriebssystems**. Sie besitzen kein eigenes Host-OS, was sie effizienter macht.
-
----
-
-## 3. Die vier Kernbegriffe
-
-| Begriff              | Kurzbeschreibung                                      | Analogie           |
-|:-------------------- |:----------------------------------------------------- |:------------------ |
-| **Dockerfile**       | Textdatei mit der Bauanleitung (Schritt-für-Schritt). | Das Rezept         |
-| **Docker Image**     | Die fertige, unveränderliche Vorlage (Snapshot).      | Die Backmischung   |
-| **Docker Container** | Die aktive, isolierte Laufzeitinstanz.                | Der fertige Kuchen |
-| **Docker Registry**  | Speicherort zum Teilen von Images (z. B. Docker Hub). | Die Bibliothek     |
-
----
-
-## 4. Praxisteil: System-Abfrage
+## 1. Praxisteil: System-Abfrage
 
 Um Informationen über die lokale Docker-Umgebung zu erhalten, gibt es drei gängige Wege:
 
@@ -43,13 +11,14 @@ Dies ist der direkteste Weg für Administratoren:
   ```bash
   Docker version 20.10.23, build 7155243
   ```
+
 * **Laufende Container anzeigen:** `docker ps`
   
   ```bash
   CONTAINER ID   IMAGE                           COMMAND        CREATED       STATUS          PORTS                                                           NAMES
   2cd9b983b1db   portainer/portainer-ce:latest   "/portainer"   3 years ago   Up 13 minutes   8000/tcp, 9000/tcp, 0.0.0.0:9443->9443/tcp, :::9443->9443/tcp   portainer
-  
   ```
+
 * **Vorhandene Images anzeigen:** `docker images ls`
   
   ```bash
@@ -75,4 +44,3 @@ Portainer bietet ein Dashboard unter `https://localhost:9443`:
 * **Images Menü:** Ermöglicht das Verwalten und Durchsuchen der lokalen Image-Datenbank.
 
 ![Portainer Dashboard](img/Bild%20(6).png)
-
